@@ -32,7 +32,7 @@ All examples utilize similar control schemes:
 - **R**: Reset current generation
 
 `regions` example:
-- **E**: Regenerate regions
+- **E**: Enable/disable region display
 
 ## Description of the Examples
 
