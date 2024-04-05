@@ -1,8 +1,8 @@
-# Relationship-based Graph WFC
+# WFC on a (labelled and directed) graph
 
 In this repository is an implementation of an extension to the WaveFunctionCollapse algorithm, as described in my Bachelor's Thesis (link pending).
 
-The extension aims to extend WFC to work in non-grid scenarios, with the goal of being as flexible as possible when it comes to usage in different contexts. The implementation is made as a single header library in pure C.
+The extension aims to extend WFC to work in non-grid scenarios, with the goal of being as flexible as possible when it comes to usage in different contexts. To do this, the WFC's grid wave is replaced with a directed multigraph with labelled edges. The implementation is made as a single header library in pure C.
 
 There are a total of five examples implementing the extension:
 - `wfc`
@@ -13,9 +13,11 @@ There are a total of five examples implementing the extension:
 
 ## Running the code.
 
-To build the examples, you can use the following commands.
+To build the examples, download the latest archive, extract it, then run the following commands at the root directory.
+
+Linux:
 ``` shell
-git clone --recurse-submodules https://github.com/Mateus-Carmo31/wfc-extension.git
+git clone --recurse-submodules -j8 https://github.com/Mateus-Carmo31/wfc-extension.git
 cd wfc-extension
 mkdir build
 cd build
@@ -23,11 +25,14 @@ cmake -DCMAKE_BUILD_TYPE=Debug -DCUSTOMIZE_BUILD=On -DSUPPORT_FILEFORMAT_SVG=On 
 make
 ```
 
+Windows:
+Use one of the pre-built binaries available under the Releases tab. Otherwise, you can compile the project with the same command as Linux through the use of [w64devkit](https://github.com/skeeto/w64devkit).
+
 ## Controls
 
 All examples utilize similar control schemes:
 - **S**: WFC Generation Step (disables auto-stepping if enabled)
-- **Space***: Enable/disable auto-stepping (automatically do a WFC step)
+- **Space**: Enable/disable auto-stepping (automatically do a WFC step)
 - **Enter**: Run entire WFC generation
 - **R**: Reset current generation
 
