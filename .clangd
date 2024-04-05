@@ -1,0 +1,8 @@
+CompileFlags:
+  CompilationDatabase: ./build
+
+InlayHints:
+  ParameterNames: No
+
+Hover:
+  ShowAKA: Yes

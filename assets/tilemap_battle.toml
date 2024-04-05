@@ -1,0 +1,176 @@
+path = "../assets/tilemap_battle.png"
+tileSize = 16
+
+[grass.grass1]
+uv = [0, 0]
+slot_up = 'g'
+slot_down = 'g'
+slot_left = 'g'
+slot_right = 'g'
+
+[grass.grass2]
+uv = [1, 0]
+weight = 0.7
+slot_up = 'g'
+slot_down = 'g'
+slot_left = 'g'
+slot_right = 'g'
+
+[grass.grass3]
+uv = [2, 0]
+weight = 0.7
+slot_up = 'g'
+slot_down = 'g'
+slot_left = 'g'
+slot_right = 'g'
+
+[roads.road_v_down]
+uv = [0, 7]
+weight = 0.3
+slot_up = 'g !roads'
+slot_down = 'r'
+slot_left = 'g !roads'
+slot_right = 'g !roads'
+
+[roads.road_v]
+uv = [0, 8]
+weight = 0.5
+slot_up = 'r'
+slot_down = 'r'
+slot_left = 'g !roads'
+slot_right = 'g !roads'
+
+[roads.road_v_up]
+uv = [0, 9]
+weight = 0.3
+slot_up = 'r'
+slot_down = 'g !roads'
+slot_left = 'g !roads'
+slot_right = 'g !roads'
+
+[roads.road_h_right]
+uv = [1, 6]
+weight = 0.3
+slot_up = 'g !roads'
+slot_down = 'g !roads'
+slot_left = 'g !roads'
+slot_right = 'r'
+
+[roads.road_h]
+uv = [2, 6]
+weight = 0.5
+slot_up = 'g !roads'
+slot_down = 'g !roads'
+slot_left = 'r'
+slot_right = 'r'
+
+[roads.road_h_left]
+uv = [3, 6]
+weight = 0.3
+slot_up = 'g !roads'
+slot_down = 'g !roads'
+slot_left = 'r'
+slot_right = 'g !roads'
+
+[roads.road_bend_1]
+uv = [1, 7]
+weight = 0.2
+slot_up = 'g !roads'
+slot_down = 'r'
+slot_left = 'g !roads'
+slot_right = 'r'
+
+[roads.road_bend_2]
+uv = [3, 7]
+weight = 0.2
+slot_up = 'g !roads'
+slot_down = 'r'
+slot_left = 'r'
+slot_right = 'g !roads'
+
+[roads.road_bend_3]
+uv = [1, 9]
+weight = 0.2
+slot_up = 'r'
+slot_down = 'g !roads'
+slot_left = 'g !roads'
+slot_right = 'r'
+
+[roads.road_bend_4]
+uv = [3, 9]
+weight = 0.2
+slot_up = 'r'
+slot_down = 'g !roads'
+slot_left = 'r'
+slot_right = 'g !roads'
+
+[roads.road_t_1]
+uv = [2, 7]
+weight = 0.2
+slot_up = 'g !roads'
+slot_down = 'r'
+slot_left = 'r'
+slot_right = 'r'
+
+[roads.road_t_2]
+uv = [3, 8]
+weight = 0.2
+slot_up = 'r'
+slot_down = 'r'
+slot_left = 'r'
+slot_right = 'g !roads'
+
+[roads.road_t_3]
+uv = [2, 9]
+weight = 0.2
+slot_up = 'r'
+slot_down = 'g !roads'
+slot_left = 'r'
+slot_right = 'r'
+
+[roads.road_t_4]
+uv = [1, 8]
+weight = 0.2
+slot_up = 'r'
+slot_down = 'r'
+slot_left = 'g !roads'
+slot_right = 'r'
+
+[cities]
+one_per_region = true
+
+[cities.city_red]
+uv = [8, 3]
+unique = true
+weight = 0.4
+slot_up = 'g !roads'
+slot_down = 'g'
+slot_left = 'g !roads'
+slot_right = 'g !roads'
+
+[cities.city_blue]
+uv = [8, 2]
+unique = true
+weight = 0.4
+slot_up = 'g !roads'
+slot_down = 'g'
+slot_left = 'g !roads'
+slot_right = 'g !roads'
+
+[cities.city_green]
+uv = [8, 1]
+unique = true
+weight = 0.4
+slot_up = 'g !roads'
+slot_down = 'g'
+slot_left = 'g !roads'
+slot_right = 'g !roads'
+
+[cities.city_orange]
+uv = [8, 4]
+unique = true
+weight = 0.4
+slot_up = 'g !roads'
+slot_down = 'g'
+slot_left = 'g !roads'
+slot_right = 'g !roads'
