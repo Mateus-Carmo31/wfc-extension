@@ -15,8 +15,8 @@ There are a total of five examples implementing the extension:
 
 To build the examples, you can use the following commands.
 ``` shell
-git clone --recurse-modules https://github.com/Mateus-Carmo31/tcc.git
-cd tcc
+git clone --recurse-submodules https://github.com/Mateus-Carmo31/wfc-extension.git
+cd wfc-extension
 mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Debug -DCUSTOMIZE_BUILD=On -DSUPPORT_FILEFORMAT_SVG=On -G "Unix Makefiles" ..
