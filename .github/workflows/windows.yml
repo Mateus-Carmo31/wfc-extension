@@ -20,7 +20,7 @@ jobs:
           dir
           mkdir build
           cd build
-          cmake -DCMAKE_BUILD_TYPE=Debug -DCUSTOMIZE_BUILD=On -DSUPPORT_FILEFORMAT_SVG=On -G "Unix Makefiles" ..
+          cmake -DCMAKE_BUILD_TYPE=Release -DCUSTOMIZE_BUILD=On -DSUPPORT_FILEFORMAT_SVG=On -G "Unix Makefiles" ..
           make
           cd ..
 
